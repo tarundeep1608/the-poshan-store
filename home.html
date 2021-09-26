@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Bootstrap, font-awesome kits   -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6706302c7d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--  Custom CSS  -->
     <link rel="stylesheet" href="home-style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>The Poshan Store</title>
 </head>
 <body>
@@ -19,14 +21,68 @@
             </div>
         </div>
     </notification>
-    <nav>
+    <navbar>
+        <div id="navbar">
+         <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <div class="nav-logo">
+                    <img src="logo.png"><a href="#" class="logo-nav"></a></img>
+                </div>
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+         </nav>
+        </div>
+    </navbar>
+<p>
+    h<br>
+    h<br>
+    h<br>
+    h<br>
+    h<br>
+    h<br>
+    h<br><br>
+    h<br><br>
+    <br><br>
+    h<br><br>
+    h<br><br>
+    h<br>
+    h<br><br>
+    h<br><br>
+    h<br><br>
+    <br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
 
-    </nav>
-
+</p>
 </header>
+<script>
 
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+        if (window.pageYOffset >= sticky)
+        {
+            navbar.classList.add("sticky")
+        } else
+        {
+        navbar.classList.remove("sticky");
+        }
+}
+</script>
+
+<!--bootstrap scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 </body>
 </html>

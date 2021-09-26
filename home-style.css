@@ -39,5 +39,58 @@ html{
     color: white !important;
     font-family: Montserrat,sans-serif;
     font-weight: 450;
+}
+.message:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: white !important;
+    font-family: Montserrat,sans-serif;
+    font-weight: 450;
+}
 
+/*nav-bar*/
+.navbar{
+    background-color:transparent;
+    padding: 1em 0;
+    height: 105px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.nav-logo img
+{
+    width:140px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+}
+.nav-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.nav-list li {
+    display: inline-block;
+    margin: 8px 8px 8px 20px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:white;
+    transition: ease-in-out;
+    transition-delay: 0.5s;
+}
+.sticky li a{
+    color: black;
+}
+.sticky:hover{
+    background-color:white !important;
 }
