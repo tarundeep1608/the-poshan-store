@@ -11,7 +11,6 @@
     <title>The Poshan Store</title>
 </head>
 <body>
-<header>
     <notification>
         <div class="notification-bar">
             <div class="notification-bar-text">
@@ -21,25 +20,27 @@
             </div>
         </div>
     </notification>
+    <header id="body-header">
     <navbar>
         <div id="navbar">
          <nav class="navbar">
                 <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">#poshtikbharat</a></li>
                 </ul>
                 <div class="nav-logo">
                     <img src="logo.png"><a href="#" class="logo-nav"></a></img>
                 </div>
                     <ul class="nav-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#"><i class="fas fa-search"></i>    Search </a></li>
+                        <li><a href="#"><i class="fas fa-user"></i>    Account </a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i>    Cart </a></li>
                     </ul>
          </nav>
         </div>
     </navbar>
+</header>
 <p>
     h<br>
     h<br>
@@ -62,13 +63,13 @@
     <br><br><br><br>
 
 </p>
-</header>
+<!--navbar script for scroll action-->
 <script>
-
     window.onscroll = function() {myFunction()};
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop;
-    function myFunction() {
+    function myFunction()
+    {
         if (window.pageYOffset >= sticky)
         {
             navbar.classList.add("sticky")
@@ -76,9 +77,8 @@
         {
         navbar.classList.remove("sticky");
         }
-}
+    }
 </script>
-
 <!--bootstrap scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

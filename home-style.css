@@ -1,16 +1,24 @@
 /* resetting all margin paddings etc*/
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     border: 0;
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
 }
 /*html tags over riding*/
 html{
     scroll-behavior: smooth;
+}
+/*background*/
+#body-header {
+    height: 100vh;
+    width:100vw;
+    background-image: url("bg1.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.2rem;
 }
 /* nav-top-notification */
 .notification-bar {
@@ -56,6 +64,10 @@ html{
     display: flex;
     box-sizing: border-box;
     overflow: hidden;
+    margin-top:-20px;
+}
+.navbar:hover{
+    background-color:white;
 }
 .nav-logo img
 {
@@ -67,30 +79,48 @@ html{
 }
 .nav-list {
     list-style: none;
-    padding-left: 0px;
-    margin: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 .nav-list li {
     display: inline-block;
-    margin: 8px 8px 8px 20px;
-    font-weight: 100;
+    margin: 5px 5px 5px 5px;
     font-size: 0.9rem;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 .nav-list li a {
     color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-list ul li a {
+    color: white;
+    font-size: 16px;
     text-decoration: none;
 }
 .sticky {
     position: fixed;
-    top: 0;
+    top:0;
     width: 100%;
     background:white;
-    transition: ease-in-out;
+    transition: fade-in;
     transition-delay: 0.5s;
 }
+.sticky li{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
 .sticky li a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
     color: black;
 }
-.sticky:hover{
-    background-color:white !important;
-}
+
+
