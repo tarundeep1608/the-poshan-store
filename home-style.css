@@ -1,0 +1,43 @@
+/* resetting all margin paddings etc*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/*html tags over riding*/
+html{
+    scroll-behavior: smooth;
+}
+/* nav-top-notification */
+.notification-bar {
+    background-color: #f7c142;
+    color: #ffffff;
+
+}
+.notification-bar-text {
+    text-align: center;
+    margin:0px;
+    min-height: 41px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.notification-bar p {
+    margin: 5px 0 5px -5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-weight: 400;
+}
+.message{
+    cursor: pointer;
+    text-decoration: none;
+    color: white !important;
+    font-family: Montserrat,sans-serif;
+    font-weight: 450;
+
+}
