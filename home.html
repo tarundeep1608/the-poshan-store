@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Bootstrap, font-awesome kits   -->
+    <!-- Bootstrap, font-awesome kits   -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6706302c7d.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!--  Custom CSS  -->
+    <!--  Custom CSS  -->
 
     <link rel="stylesheet" href="home-style.css">
 
@@ -14,39 +14,71 @@
     <link rel="shortcut icon" type="image/png" href="logofav.png"/>
 
 </head>
+<!-- main body starts here -->
 <body>
-    <notification>
-        <div class="notification-bar">
-            <div class="notification-bar-text" >
-                <a href="#" class="message"  >
-                    <p ><strong>Clean food for a strong you!  Get an additional 10% off; use: POSHAN. Free shipping and COD available!</strong> </p>
-                </a>
-            </div>
+<!-- alert bar at the top -->
+<notification>
+    <div class="notification-bar alert alert-dismissible">
+        <div class="notification-bar-text" >
+            <a href="#" class="message"  >
+                <p ><strong>Clean food for a strong you!  Get an additional 10% off; use: POSHAN. Free shipping and COD available!</strong> </p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span> </button>
+            </a>
         </div>
-    </notification>
-<!--    <header id="body-header">-->
-    <navbar>
-        <div id="navbar">
-         <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">#poshtikbharat</a></li>
-                </ul>
-                <div class="nav-logo">
-                    <img src="logomain.png"><a href="#" class="logo-nav"></a></img>
-                </div>
-                    <ul class="nav-list">
-                        <li><a href="#"><i class="fas fa-search"></i>    Search </a></li>
-                        <li><a href="#"><i class="fas fa-user"></i>    Account </a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart"></i>    Cart </a></li>
-                    </ul>
-         </nav>
+    </div>
+</notification>
+<!-- nav bar -->
+<navbar>
+<nav class=" nav navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="logomain.png" style="width:160px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#al-center-nav" aria-controls="al-center-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="al-center-nav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pMenuDropdown">
+                        <a class="dropdown-item" href="#">Protein Sachet's </a>
+                        <a class="dropdown-item" href="#">Energy Drinks</a>
+                        <a class="dropdown-item" href="#">Our best range</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="sMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Community</a>
+                    <div class="dropdown-menu" aria-labelledby="sMenuDropdown">
+                        <a class="dropdown-item" href="#">Poshan Blog</a>
+                        <a class="dropdown-item" href="#">Protein Calculator </a>
+                        <a class="dropdown-item" href="#">Our Philosophy </a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">#poshtikbharat </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-search"></i>    Search </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user"></i>    Account </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>    Cart </a>
+                </li>
+            </ul>
         </div>
-    </navbar>
-</header>
-    <section id="carousel">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade position-relative" data-ride="carousel" style="top: -115px; left: 0px;right: 0px;bottom: 0; z-index:0;">
+
+    </div>
+</nav>
+</navbar>
+<!--Carousel placed-->
+<section id="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade " data-ride="carousel" style=" margin-top:-105px; z-index:0 ">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="bg1.png" alt="First slide">
@@ -73,11 +105,14 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    </section>
-    <section id="site-title" class="site-title">
-        <div class="title-text" > Clean Protein Powders for the Indian Everyday Athlete </div>
-        <div class="bottom-text" > Our products are designed on the back of hours of conversations with leading nutritionists, coaches and everyday athletes! </div>
-    </section>
+</section>
+<section id="site-title" class="site-title">
+    <div class="title-text" > Clean Protein Powders for the Indian Everyday Athlete </div>
+    <div class="bottom-text" > Our products are designed on the back of hours of conversations with leading nutritionists, coaches and everyday athletes! </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 
 <!--navbar script for scroll action-->
 <script>
@@ -91,7 +126,7 @@
             navbar.classList.add("sticky")
         } else
         {
-        navbar.classList.remove("sticky");
+            navbar.classList.remove("sticky");
         }
     }
 </script>
