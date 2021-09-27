@@ -23,15 +23,17 @@ html{
 /* nav-top-notification */
 .notification-bar {
     background-color: #f7c142;
+    width: 100%;
     color: #ffffff;
-
-}
-strong{
+    z-index: 99;
+    position: absolute;
+    margin-top: -3%;
+    padding-bottom: -50px;
 
 }
 .notification-bar-text {
     text-align: center;
-    margin:0px;
+    margin:3px;
     min-height: 41px;
     align-items: center;
     justify-content: center;
@@ -63,11 +65,13 @@ strong{
 .navbar{
     background-color:transparent;
     padding: 1em 0;
+    width: 100%;
     height: 105px;
     display: flex;
     box-sizing: border-box;
     overflow: hidden;
-    margin-top:0px;
+    margin-top:3%;
+    z-index: 99;
 }
 .navbar:hover{
     background-color:white;
@@ -77,11 +81,11 @@ strong{
 }
 .nav-logo img
 {
-    width:140px;
+    width:160px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px;
+    top: -25%;
 }
 .nav-list {
     list-style: none;
@@ -106,15 +110,18 @@ strong{
 .sticky {
     position: fixed;
     top:0;
+    margin-top:-3.2%;
     width: 100%;
     background:white;
     transition: fade-in;
     transition-delay: 0.5s;
+    z-index: 99;
 }
 .sticky li{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     padding-left: 20px;
+
 }
 .sticky li a{
     font-size: 16px;
@@ -124,5 +131,37 @@ strong{
     font-weight: 500;
     color: black;
 }
+#carousel{
+    margin-bottom: -5%;
+}
+/*Title text styles*/
+.site-title {
+    position: relative;
+}
+.title-text
+{
+    font-family: Montserrat,sans-serif;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.bottom-text
+{
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    letter-spacing: 0.4px;
+}
+#site-title
+{
 
+}
 
