@@ -251,7 +251,6 @@ html{
     padding:1rem 0;
 }
 
-
 .app-button
 {
     display: inline-block;
@@ -273,8 +272,153 @@ html{
 .app-button:hover{
     transform: scale(1.1);
 }
+/*philosophy*/
+.philosophy-title
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8%;
+}
+.title-text-philosophy
+{
+    font-family: Montserrat,sans-serif;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.bottom-text-philosophy
+{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 25px;
+    letter-spacing: 0.4px;
+}
+.know-button
+{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    border-radius: 1rem;
+    background:#f7c142;
+    font-size: 1.2rem;
+    color:#fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+}
 
-/*extra spacings adjusted*/
+.know-button:hover{
+    transform: scale(1.1);
+    text-decoration:none !important;
+    color:white;
+}
+
+/*footer*/
+.footer {
+    padding:50px 0;
+    background-color: #f2f2f2;
+    color: #636363;
+}
+
+.footer h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.footer ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+}
+.footer ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+}
+
+.footer ul a:hover {
+    opacity:0.8;
+}
+
+@media (max-width:767px) {
+    .footer .item:not(.social) {
+        text-align:center;
+        padding-bottom:20px;
+    }
+}
+
+.footer .item.text {
+    margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+    .footer .item.text {
+        margin-bottom:0;
+    }
+}
+
+.footer .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+}
+
+.footer .item.social {
+    text-align:center;
+}
+
+@media (max-width:991px) {
+    .footer .item.social {
+        text-align:center;
+        margin-top:20px;
+    }
+}
+
+.footer .item.social > a {
+    font-size:20px;
+    width:40px;
+    height:40px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+}
+
+.footer .item.social > a:hover {
+    opacity:0.9;
+}
+
+.footer .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.5;
+    font-size:13px;
+    margin-bottom:0;
+}
+
+/*extra spacings, font styles adjusted*/
+.wrapper
+{
+    width: 100%;
+}
+.bold{
+    font-weight: 700;
+}
 .pb-3, .py-3
 {
     padding-bottom: 0rem!important;
@@ -282,5 +426,8 @@ html{
 .pt-3, .py-3
 {
     padding-top: 0rem!important;
+}
+.grid{
+    display: flex;
 }
 

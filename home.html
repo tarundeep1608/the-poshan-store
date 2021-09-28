@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Bootstrap, font-awesome kits   -->
+    <!-- Bootstrap, font-awesome kits, google fonts   -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6706302c7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--  Custom CSS  -->
 
-    <link rel="stylesheet" href="home-style.css">
 
+    <link rel="stylesheet" href="home-style.css">
     <meta charset="UTF-8">
     <title>The Poshan Store</title>
     <link rel="shortcut icon" type="image/png" href="logofav.png"/>
@@ -112,7 +117,7 @@
     <div class="bottom-text" > Our products are designed on the back of hours of conversations with leading nutritionists, coaches and everyday athletes! </div>
 </section>
 <!--Cards for products-->
-<section id="producthigh">
+<section id="producthighlight">
     <div id="product-card">
         <div class="card" style="width: 18rem;">
          <img class="card-img-top " src="p1.png" alt="p1">
@@ -141,9 +146,23 @@
         </div>
     </div>
 </section>
+<!--separator image-->
+<section class="container-fluid" id="middle-separator">
+    <div id="separator">
+        <img src="middle-separator.png" class="img-fluid" alt="middle image">
+    </div>
+</section>
+
+<!--product highlighter-->
+<!--<hr class="featurette-divider">-->
+
+<!--testimonials carousel-->
+
+
 <!--about app-->
+
 <section class="container-fluid " id="about-app">
-        <div class="content">
+        <div class="content title-text">
             <h3> <span>Poshan</span> App is now available on both Google Playstore and Apple Store</h3>
             <p>Download the App and Order your favorite protein flavor now!</p>
 
@@ -152,13 +171,57 @@
                 <a href="#" class="app-button"> <i class="fab fa-google-play"></i> Google Play </a>
             </div>
         </div>
+</section>
+<!--philosophy section-->
+<section id="philosophy" class="philosophy-title">
+    <div class="title-text-philosophy" > The Poshan Philosophy </div>
+    <div class="bottom-text-philosophy" > There is no secret ingredient! </div>
+    <div class="bottom-text-philosophy" id="#know-more"><a href="#" class="know-button" style="color:black;"> Know More </a> </div>
+
 
 </section>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
+<!--footer-->
+  <div class="footer">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Verify</h3>
+                    <ul>
+                        <li><a href="#">Verify your Product</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#">talktous@poshan.co</a></li>
+                        <li><a href="#">+91-8076471152</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Poshan</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col item social">
+                <h3>GET CONNECTED</h3>
+                <a href="#"><i class="fab fa-facebook-square" style="color:black;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color:black;"></i></a>
+                <a href="#"><i class="fab fa-snapchat-square" style="color:black;"></i></a>
+                <a href="#"><i class="fab fa-instagram-square" style="color:black;"></i></a>
+            </div>
+            <p class="copyright">Poshan © 2021</p>
+        </div>
+    </footer>
+  </div>
 <!--navbar script for scroll action-->
 <script>
     window.onscroll = function() {myFunction()};
