@@ -249,6 +249,61 @@ html{
     transition: transform 0.5s ease;
     display: block;
 }
+/*featurette*/
+.featurette-title
+{
+    font-family: Montserrat,sans-serif;
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+#card-one .card
+{
+    transition: none;
+    margin-bottom: 30px;
+    height: 80%;
+    box-shadow: none;
+    border: none;
+}
+#card-one .card:hover
+{
+    transform: none;
+    box-shadow: none;
+}
+#card-two .card
+{
+    transition: none;
+    margin-bottom: 30px;
+    height: 80%;
+    box-shadow: none;
+    border: none;
+}
+#card-two .card:hover
+{
+    transform: none;
+    box-shadow: none;
+}
+#card-one:hover
+{
+    transition: transform 2s ease-in-out;
+    transform: scale(1.1);
+}
+#card-two:hover
+{
+    transition: transform 2s ease-in-out;
+    transform: scale(1.1);
+}
+#card-one{
+    margin-left: 5% ;
+}
+#card-two{
+    margin-left: 35% ;
+}
 /*about poshan app*/
 #about-app
 {
