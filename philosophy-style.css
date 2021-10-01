@@ -1,3 +1,7 @@
+.html
+{
+    scroll-behavior: smooth;
+}
 /* Resetting all margin paddings etc*/
 * {
     margin: 0px;

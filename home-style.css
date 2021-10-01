@@ -1,3 +1,7 @@
+.html
+{
+    scroll-behavior: smooth;
+}
 /*custom-css variables*/
 :root{
     --white: #FD7F2C;

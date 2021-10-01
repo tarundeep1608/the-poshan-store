@@ -1,3 +1,7 @@
+.html
+{
+    scroll-behavior: smooth;
+}
 /* Resetting all margin paddings etc*/
 body {
     margin-top: 500px;
@@ -501,17 +505,17 @@ input[type="radio"]:checked + label span.radio::after {
 .submit-button {
     background:#B9DFFF;
     color:#fff;
-    border:1pxsolid#eee;
+    border:1px solid #eee;
     border-radius:20px;
-    box-shadow:5px5px5px#eee;
+    box-shadow:5px 5px 5px #eee;
     text-shadow:none;
 }
 .submit-button:hover {
     background:#016ABC;
     color:#fff;
-    border:1pxsolid#eee;
+    border:1px solid #eee;
     border-radius:20px;
-    box-shadow:5px5px5px#eee;
+    box-shadow:5px 5px 5px #eee;
     text-shadow:none;
 }
 
@@ -588,7 +592,17 @@ input[type="radio"]:checked + label span.radio::after {
 .breadcrumb{
     color: black;
     background-color: white;
+    width: fit-content;
+    margin-top:-3%;
+    padding-right: 0px;
+    padding-left: 0.5%;
 }
 .breadcrumb breadcrumb-item{
     color: black;
+}
+.dropdown-item{
+    z-index: 200 !important;
+}
+.show{
+    z-index: 200 !important;
 }
