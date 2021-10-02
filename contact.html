@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+   <title>The Poshan Store</title>
+    <!-- Fontawesome and Bootstrap CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6706302c7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  custom styling   -->
+   <link rel="shortcut icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1qXyYTD1ak7ifPbdxKtV0EgTqjuZJhZ2J"/>
+   <link rel="stylesheet" href="contact-style.css">
+
+</head>
+<!--body starts here-->
+<body onload="loadfun()">
+<div id="loading"></div>
+<!-- nav bar -->
+<navbar>
+    <nav class=" nav navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"><img src="https://drive.google.com/uc?export=view&id=1garJPrb4KttpqlSeCTLbB07iqu6s4PXj" style="width:160px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#al-center-nav" aria-controls="al-center-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="al-center-nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Shop <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pMenuDropdown">
+                            <a class="dropdown-item" href="#site-title">Protein Sachet's </a>
+                            <a class="dropdown-item" href="#site-title">Energy Drinks</a>
+                            <a class="dropdown-item" href="#featurette-title">Our best range</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="sMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Community</a>
+                        <div class="dropdown-menu" aria-labelledby="sMenuDropdown">
+                            <a class="dropdown-item" href="blog.html">Poshan Blog</a>
+                            <a class="dropdown-item" href="protein.html">Protein Calculator </a>
+                            <a class="dropdown-item" href="philosophy.html">Our Philosophy </a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="philosophy.html">#poshtikbharat </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i>    Search </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i>    Account </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>    Cart </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</navbar>
+
+<!--breadcrump-->
+<ol class="breadcrumb" style="color: black">
+    <li class="breadcrumb-item"><a href="home.html" style="color: black">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+</ol>
+
+<!--main form-->
+  <div class="form-container">
+    <div class="content">
+     <div class="left-side">
+        <div class="address details">
+         <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+           <div class="text-one">Shop No.69, White Ball</div>
+           <div class="text-two">Cannaught Place, New Delhi</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+         <div class="topic">Phone</div>
+          <div class="text-one">+91-8076471152</div>
+         <div class="text-two">+91-9211790589</div>
+        </div>
+       <div class="email details">
+         <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">talktous@poshan.co</div>
+         <div class="text-two">info.poshan@gmail.com</div>
+      </div>
+     </div>
+     <div class="right-side">
+       <div class="topic-text">Send us a message</div>
+        <p>We at Poshan are happy to help you! No one should stop you from achieving the fitness you have been longing for. Message us your queries!</p>
+        <form action="#">
+          <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+         </div>
+         <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+         </div>
+         <div class="input-box message-box">
+            <textarea id="input-message" name="input-message" rows="2" cols="40" placeholder="Message"></textarea>
+         </div>
+         <div class="button">
+            <input type="button" class="know-button" value="Send Now" >
+         </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Verify</h3>
+                    <ul>
+                        <li><a href="#">Verify your Product</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#">talktous@poshan.co</a></li>
+                        <li><a href="#">+91-8076471152</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Poshan</h3>
+                    <p>We believe in the power of nature, not chemicals - clean food, not supplements! In our quest to power you, we brought together some of nature's finest offerings with a delightful taste!</p>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col item social">
+                <h3>GET CONNECTED</h3>
+                <a href="#"><i class="fab fa-facebook-square" style="color:black;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color:black;"></i></a>
+                <a href="#"><i class="fab fa-snapchat-square" style="color:black;"></i></a>
+                <a href="#"><i class="fab fa-instagram-square" style="color:black;"></i></a>
+            </div>
+            <p class="copyright">Poshan © 2021</p>
+        </div>
+    </footer>
+</div>
+<!--script for loading animation-->
+
+<script>
+    var load= document.getElementById("loading");
+    function loadfun()
+    {
+        load.style.display= 'none';
+    }
+</script>
+
+<!--navbar script for scroll action-->
+<script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction()
+    {
+        if (window.pageYOffset >= 40)
+        {
+            navbar.classList.add("sticky")
+        } else
+        {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+<!--bootstrap scripts-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>
