@@ -134,6 +134,27 @@ html{
 .breadcrumb breadcrumb-item{
     color: black;
 }
+/*title*/
+/*Title text styles*/
+.site-title
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+.title-text
+{
+    font-family: Montserrat,sans-serif;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
 /* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
