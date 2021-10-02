@@ -2,6 +2,18 @@
 {
     scroll-behavior: smooth;
 }
+#loading
+{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url("loader.gif");
+    no-repeat: centre;
+    z-index: 9999;
+
+
+
+}
 /*custom-css variables*/
 :root{
     --white: #FD7F2C;
@@ -143,7 +155,7 @@ html{
         top:0;
         width: 100%;
         transition: fade-in;
-        transition-delay: 1s;
+        transition-delay:  1s;
     }
     .navbar-brand
     {

@@ -21,7 +21,8 @@
 </head>
 <!-- main body starts here -->
 
-<body>
+<body onload="loadfun()">
+<div id="loading"></div>
 <!-- alert bar at the top -->
 <notification>
     <div class="notification-bar alert alert-dismissible">
@@ -353,6 +354,15 @@
         </div>
     </footer>
   </div>
+<!--script for loading animation-->
+
+<script>
+    var load= document.getElementById("loading");
+    function loadfun()
+    {
+     load.style.display= 'none';
+    }
+</script>
 
 <!--navbar script for scroll action-->
 <script>
