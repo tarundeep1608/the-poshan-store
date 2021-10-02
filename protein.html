@@ -21,7 +21,8 @@
 </head>
 
 
-<body style="background-image: url('https://drive.google.com/uc?export=view&id=1yPTlTFo6b3SFRftNivoJSVO5SbDRuSPE');">
+<body onload="loadfun()" style="background-image: url('https://drive.google.com/uc?export=view&id=1yPTlTFo6b3SFRftNivoJSVO5SbDRuSPE');">
+<div id="loading"></div>
 <!--NAVBAR-->
 <navbar>
   <nav class=" nav navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar">
@@ -265,6 +266,15 @@
     </div>
   </footer>
 </div>
+<!--script for loading animation-->
+
+<script>
+  var load= document.getElementById("loading");
+  function loadfun()
+  {
+    load.style.display= 'none';
+  }
+</script>
 <!--navbar script for scroll action-->
 <script>
   window.onscroll = function() {myFunction()};

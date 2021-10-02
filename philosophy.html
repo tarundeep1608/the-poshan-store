@@ -17,7 +17,8 @@
     <title>The Poshan Store</title>
     <link rel="shortcut icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1qXyYTD1ak7ifPbdxKtV0EgTqjuZJhZ2J"/>
 </head>
-<body>
+<body onload="loadfun()">
+<div id="loading"></div>
 <navbar>
     <nav class=" nav navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar">
         <div class="container">
@@ -134,6 +135,15 @@
     </footer>
 </div>
 </div>
+<!--script for loading animation-->
+
+<script>
+    var load= document.getElementById("loading");
+    function loadfun()
+    {
+        load.style.display= 'none';
+    }
+</script>
 <!--Navbar script for scroll action-->
 <script>
     window.onscroll = function() {myFunction()};

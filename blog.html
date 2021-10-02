@@ -27,7 +27,8 @@
             #mor {display: none; color: #171515}
         </style>
     </head>
-    <body>
+    <body onload="loadfun()">
+    <div id="loading"></div>
     <navbar>
         <nav class=" nav navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar">
             <div class="container">
@@ -315,6 +316,15 @@
                 </div>
             </footer>
         </div>
+    <!--script for loading animation-->
+
+    <script>
+        var load= document.getElementById("loading");
+        function loadfun()
+        {
+            load.style.display= 'none';
+        }
+    </script>
         <!--Navbar script for scroll action-->
         <script>
             window.onscroll = function() {myFunction()};
