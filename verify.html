@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <!-- Bootstrap, font-awesome kits, google fonts   -->
+  <meta charset="UTF-8">
+   <title>The Poshan Store</title>
+    <!-- Fontawesome and Bootstrap CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6706302c7d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  custom styling   -->
+   <link rel="shortcut icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1qXyYTD1ak7ifPbdxKtV0EgTqjuZJhZ2J"/>
+   <link rel="stylesheet" href="verify-style.css">
 
-    <!--  Custom CSS  -->
-    <link rel="stylesheet" href="philosophy-style.css">
-    <meta charset="UTF-8">
-    <title>The Poshan Store</title>
-    <link rel="shortcut icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1qXyYTD1ak7ifPbdxKtV0EgTqjuZJhZ2J"/>
 </head>
+<!--body starts here-->
 <body onload="loadfun()">
 <div id="loading"></div>
+<!-- nav bar -->
 <navbar>
     <nav class=" nav navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="home.html"><img src="https://drive.google.com/uc?export=view&id=1mMX9FxJ8WIE_2A1cGjG4zmyujhY9H-x0" style="width:160px;"></a>
+            <a class="navbar-brand" href="home.html"><img src="https://drive.google.com/uc?export=view&id=1garJPrb4KttpqlSeCTLbB07iqu6s4PXj" style="width:160px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#al-center-nav" aria-controls="al-center-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,7 +37,7 @@
                             Shop <span class="sr-only">(current)</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="pMenuDropdown">
-                            <a class="dropdown-item" href="home.html#site-title">Protein Sachet's </a>
+                            <a class="dropdown-item" href="home.html#site-title" >Protein Sachet's </a>
                             <a class="dropdown-item" href="home.html#site-title">Energy Drinks</a>
                             <a class="dropdown-item" href="home.html#featurette-title">Our best range</a>
                         </div>
@@ -62,37 +66,49 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </nav>
 </navbar>
+
+<!--breadcrump-->
 <ol class="breadcrumb" style="color: black">
     <li class="breadcrumb-item"><a href="home.html" style="color: black">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Philosophy</li>
+    <li class="breadcrumb-item active" aria-current="page">Verify Product </li>
 </ol>
-
-<div class="sitewide-title">
-    <h1 class="page-title" style="text-align: center; font-family: Montserrat, sans-serif; font-size: 50px;" >Our Philosophy</h1>
-</div>
-<div class="margin griditem">
-<div style="text-align: left">
-    <img src="https://drive.google.com/uc?export=view&id=1xYID5VRRKDs7bT5M_mvlxQuXgz9kWo5K" alt="photo1">
-</div>
-    <div style="text-align: left">
-        <img src="https://drive.google.com/uc?export=view&id=1f_etN4vNWX20TkCRO3DupEzN-h0UchJZ" alt="photo2">
+<!--Site title entered-->
+<section id="site-title" class="site-title">
+    <div class="title-text" > Verify your Product! </div>
+</section>
+<!--main form-->
+  <div class="form-container">
+    <div class="content">
+     <div class="right-side">
+        <p>We place great importance on the quality and authenticity of the product. Please enter the details below.</p>
+         <div class="topic-text">The 4 Digit code is mentioned on the Authentication card <i class="fas fa-certificate" style="color: #f7c142;"></i></div>
+        <form action="#">
+          <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+         </div>
+         <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+         </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your Phone">
+            </div>
+            <br>
+            <div>
+                <p>Enter Code: </p>
+                <input id="partitioned" type="text" maxlength="4">
+            </div>
+            <br>
+            <div class="button">
+            <input type="button" class="know-button" value="Verify now" >
+            </div>
+      </form>
     </div>
-    <div style="text-align: left">
-    <img src="https://drive.google.com/uc?export=view&id=15ucyjIH7-hISl4EsoRPnezADDitXyZrL" alt="photo3">
+  </div>
 </div>
-<div style="text-align: left ">
-    <img src="https://drive.google.com/uc?export=view&id=168L-s5vRoLyeGUk6GOok3DqCQvgSCzJ6" alt="photo4">
-</div>
-<div style="text-align: left">
-    <img src="https://drive.google.com/uc?export=view&id=15CBmcTmpE08HjGb4169r0md0e9Jzq1I-" alt="photo5" >
-</div>
-
-
-<!--FOOTER-->
+<!--footer-->
 <div class="footer">
     <footer>
         <div class="container">
@@ -130,10 +146,9 @@
                 <a href="#"><i class="fab fa-snapchat-square" style="color:black;"></i></a>
                 <a href="#"><i class="fab fa-instagram-square" style="color:black;"></i></a>
             </div>
-            <p class="copyright">Poshan ©2021</p>
+            <p class="copyright">Poshan © 2021</p>
         </div>
     </footer>
-</div>
 </div>
 <!--script for loading animation-->
 
@@ -144,7 +159,8 @@
         load.style.display= 'none';
     }
 </script>
-<!--Navbar script for scroll action-->
+
+<!--navbar script for scroll action-->
 <script>
     window.onscroll = function() {myFunction()};
     var navbar = document.getElementById("navbar");
@@ -161,11 +177,10 @@
     }
 </script>
 
-<!--Bootstrap Scripts-->
+<!--bootstrap scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
 
 </body>
 </html>
