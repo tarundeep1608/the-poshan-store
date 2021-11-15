@@ -168,9 +168,16 @@ html{
 {
     transition: transform 0.2s ease;
     margin-bottom: 30px;
+    margin-right: 30px;
     height: 80%;
     box-shadow: none;
     border: none;
+}
+.card:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #f7c142;
+    transition: transform 0.2s ease;
 }
 .card-body{
     margin: auto;
@@ -178,7 +185,7 @@ html{
 .card-img-top
 {
     max-width: 330px;
-    width: 115%;
+    width: 100%;
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
