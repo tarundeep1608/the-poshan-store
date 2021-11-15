@@ -176,11 +176,14 @@ html{
 .card:hover
 {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #f7c142;
+    box-shadow: 0 0 15px #f7a244;
     transition: transform 0.2s ease;
 }
 .card-body{
     margin: auto;
+}
+#buy-buttons{
+    display: inline-block;
 }
 .card-img-top
 {
@@ -200,21 +203,20 @@ html{
 
 .cartbutton
 {
-    display: inline-block;
-    padding: 8px 10px;
     width: auto;
-    margin-left: 3.2vw;
-    line-height: 1.42;
-    font-weight: 700;
+    margin-left: 0.3vw;
+    line-height: 1;
+    font-weight: 400;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
     border: 1px solid transparent;
-    border-radius: 0;
+    border-radius: 10px;
     transition: background-color .3s ease-in;
     background-color: #f7c142;
-    color: #171515;
+    color:white;
 }
+
 
 /*about poshan app*/
 #about-app
