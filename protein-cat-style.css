@@ -113,6 +113,20 @@ html{
     font-weight: 500;
     color: black !important;
 }
+.search
+{
+    margin: 5px 5px 0px 5px;
+    padding-top: 3px;
+    padding-left: 25px;
+    padding-bottom: 11px ;
+    color: black !important;
+    background-color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+}
 /*breadcrump*/
 .breadcrumb{
     color: black;
@@ -403,4 +417,12 @@ html{
 }
 .show{
     z-index: 200 !important;
+}
+/*.modal-backdrop {*/
+/*    !* bug fix - no overlay *!*/
+/*    display: none;*/
+/*}*/
+.form-control
+{
+    border: none;
 }
